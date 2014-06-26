@@ -151,6 +151,7 @@
 }
 
 
+
 #pragma - mark  XMPPStreamDelegate 连接代理
 
 - (void)xmppStreamWillConnect:(XMPPStream *)sender
@@ -292,35 +293,29 @@
                 //订阅签署状态
                 NSString *subscription = [item attributeStringValueForName:@"subscription"];
                 
-                if ([subscription isEqualToString:@"both"]) { //互相加好友
-                    
+//                if ([subscription isEqualToString:@"both"]) { //互相加好友
+                
                     NSString *jid = [item attributeStringValueForName:@"jid"];
                     NSString *name = [item attributeStringValueForName:@"name"];
                     //分组（例如:联系人列表、好友列表）
                     NSArray *groups = [item elementsForName:@"group"];
                     
-                    
+                    User *aUser = [[User alloc]initWithName:name jid:jid subscription:subscription groupName:Nil];
                     
                     for (NSXMLElement *groupElement in groups) {
                         NSString *groupName = groupElement.stringValue;
                         
                         NSLog(@"didReceiveIQ----xmppJID:%@ , in group:%@",jid,groupName);
                         
-                        User *aUser = [[User alloc]initWithName:name jid:jid subscription:subscription groupName:groupName];
-                        [userArray addObject:aUser];
+                        
+                        aUser.groupName = (groupName != Nil) ? groupName : @"";
+                        
                         
                     }
-                    
-                    
-                }
                 
-                else if ([subscription isEqualToString:@"from"]){
-                    
-                }
-                
-                else if ([subscription isEqualToString:@"to"]){
-                    
-                }
+                    [userArray addObject:aUser];
+//                }
+            
             }
             
             if (self.chatDelegate && [_chatDelegate respondsToSelector:@selector(friendsArray:)]) {

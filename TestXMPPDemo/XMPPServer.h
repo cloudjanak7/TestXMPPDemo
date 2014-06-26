@@ -19,6 +19,8 @@
 typedef void(^ roomBackBlock)(id);
 //登录相关
 typedef void(^ loginAction) (NSDictionary *result);
+//添加好友相关
+typedef void(^ friendAction) (id);
 
 
 //用户信息相关
@@ -43,6 +45,7 @@ typedef void(^ loginAction) (NSDictionary *result);
 {
     roomBackBlock callBack;
     loginAction loginBack;
+    friendAction friendBack;
 }
 
 @property (nonatomic,retain)XMPPStream *xmppStream;
@@ -68,6 +71,8 @@ typedef void(^ loginAction) (NSDictionary *result);
 - (void)getExistRooms:(roomBackBlock)roomBack;//获取存在房间
 
 - (void)login:(loginAction)loginBack;//登录
+
+- (void)friendAction: (friendAction *)friend_Back;
 
 @end
 

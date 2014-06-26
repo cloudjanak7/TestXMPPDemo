@@ -14,7 +14,7 @@
 #import "XMPPRoster.h"
 #import "XMPPRosterCoreDataStorage.h"
 
-@interface ViewController ()<chatDelegate>
+@interface ViewController ()<chatDelegate,UIActionSheetDelegate>
 {
     //在线用户
     NSMutableArray *onlineUsers;
@@ -42,7 +42,7 @@
     UIBarButtonItem *right = [[UIBarButtonItem alloc]initWithTitle:@"群组" style:UIBarButtonItemStyleBordered target:self action:@selector(goToRoom)];
     self.navigationItem.rightBarButtonItem = right;
     
-    UIBarButtonItem *left = [[UIBarButtonItem alloc]initWithTitle:@"好友" style:UIBarButtonItemStyleBordered target:self action:@selector(freindArray)];
+    UIBarButtonItem *left = [[UIBarButtonItem alloc]initWithTitle:@"好友" style:UIBarButtonItemStyleBordered target:self action:@selector(addOrQueryFriends)];
     self.navigationItem.leftBarButtonItem = left;
     
     BOOL isConnect = [xmppServer connect];
@@ -151,7 +151,12 @@
     User *aUser = [onlineUsers objectAtIndex:[indexPath row]];
     //文本
     cell.textLabel.text = aUser.jid;
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@%@ : %@",aUser.subscription,aUser.groupName,aUser.presentType];
+    
+    NSString *sub = aUser.subscription ? aUser.subscription : @"";
+    NSString *group = aUser.groupName ? aUser.groupName : @"无";
+    NSString *state = aUser.presentType ? aUser.presentType : @"离线";
+    
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"关系:%@ | 组:%@ | 状态:%@",sub,group,state];
     //标记
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
@@ -179,7 +184,7 @@
 #pragma - mark 获取好友列表(两种方式)
 
 //1、从xmpp自带coreData中获取好友
-//2、用一下方式获取好友
+//2、用以下方式获取好友
 
 -(void)queryRoster2{
     /*
@@ -216,8 +221,69 @@
     NSError *error ;
     NSArray *friends = [context executeFetchRequest:request error:&error];
     
-    NSLog(@"friends %@ %d",friends,friends.count);
+    for (XMPPUserCoreDataStorageObject *object in friends) {
+        
+        NSString *name = [object displayName];
+        if (!name) {
+            name = [object nickname];
+        }
+        if (!name) {
+            name = [object jidStr];
+        }
+        
+        NSLog(@"aa %@",name);
+    }
 }
+
+- (void)addOrQueryFriends
+{
+    UIActionSheet *sheet = [[UIActionSheet alloc]initWithTitle:@"好友" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:Nil otherButtonTitles:@"添加好友",@"好友列表", nil];
+    [sheet showInView:self.view];
+}
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    NSLog(@"buttonIndex : %d",buttonIndex);
+    if (buttonIndex == 0) {
+        
+        NSLog(@"add");
+        [self addNewFriend];
+        
+    }else if (buttonIndex == 1)
+    {
+        NSLog(@"query");
+        [self freindArray];
+    }
+}
+
+- (void)addNewFriend
+{
+    UIAlertView *editAlert = [[UIAlertView alloc]initWithTitle:Nil message:@"添加好友" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+    editAlert.tag = 1001;
+    editAlert.alertViewStyle = UIAlertViewStylePlainTextInput;
+    [editAlert show];
+    
+    UITextField *inputTF = [editAlert textFieldAtIndex:0];
+    inputTF.placeholder = @"好友名称";
+}
+
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == 1) {
+        if (alertView.tag == 1001) {
+            UITextField *inputTF = [alertView textFieldAtIndex:0];
+            
+            XMPPJID *jid = [XMPPJID jidWithString:[NSString stringWithFormat:@"%@@%@",inputTF.text,[[NSUserDefaults standardUserDefaults]objectForKey:SERVER]]];
+             
+            [[xmppServer xmppRoster]addUser:jid withNickname:inputTF.text];
+            
+            //to 仅验证
+            //both 互相加好友
+        }
+    }
+}
+
 
 
 @end
