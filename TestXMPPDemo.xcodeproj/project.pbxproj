@@ -1,0 +1,694 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13B5C722195A5E2300DB5727 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B5C721195A5E2300DB5727 /* Foundation.framework */; };
+		13B5C724195A5E2300DB5727 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B5C723195A5E2300DB5727 /* CoreGraphics.framework */; };
+		13B5C726195A5E2300DB5727 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B5C725195A5E2300DB5727 /* UIKit.framework */; };
+		13B5C72C195A5E2300DB5727 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 13B5C72A195A5E2300DB5727 /* InfoPlist.strings */; };
+		13B5C72E195A5E2300DB5727 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B5C72D195A5E2300DB5727 /* main.m */; };
+		13B5C732195A5E2300DB5727 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B5C731195A5E2300DB5727 /* AppDelegate.m */; };
+		13B5C735195A5E2300DB5727 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13B5C733195A5E2300DB5727 /* Main.storyboard */; };
+		13B5C738195A5E2300DB5727 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B5C737195A5E2300DB5727 /* ViewController.m */; };
+		13B5C73A195A5E2300DB5727 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B5C739195A5E2300DB5727 /* Images.xcassets */; };
+		13B5C741195A5E2300DB5727 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B5C740195A5E2300DB5727 /* XCTest.framework */; };
+		13B5C742195A5E2300DB5727 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B5C721195A5E2300DB5727 /* Foundation.framework */; };
+		13B5C743195A5E2300DB5727 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B5C725195A5E2300DB5727 /* UIKit.framework */; };
+		13B5C74B195A5E2300DB5727 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 13B5C749195A5E2300DB5727 /* InfoPlist.strings */; };
+		13B5C74D195A5E2300DB5727 /* TestXMPPDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B5C74C195A5E2300DB5727 /* TestXMPPDemoTests.m */; };
+		13B5C758195A5FCC00DB5727 /* XMPPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B5C757195A5FCC00DB5727 /* XMPPServer.m */; };
+		13B5C75B195A63BB00DB5727 /* Statics.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B5C75A195A63BB00DB5727 /* Statics.m */; };
+		13B5C77F195A808200DB5727 /* BlueBubble2.png in Resources */ = {isa = PBXBuildFile; fileRef = 13B5C77B195A808200DB5727 /* BlueBubble2.png */; };
+		13B5C780195A808200DB5727 /* GreenBubble2.png in Resources */ = {isa = PBXBuildFile; fileRef = 13B5C77C195A808200DB5727 /* GreenBubble2.png */; };
+		13B5C781195A808200DB5727 /* aqua.png in Resources */ = {isa = PBXBuildFile; fileRef = 13B5C77D195A808200DB5727 /* aqua.png */; };
+		13B5C782195A808200DB5727 /* orange.png in Resources */ = {isa = PBXBuildFile; fileRef = 13B5C77E195A808200DB5727 /* orange.png */; };
+		13B5C798195AA9D800DB5727 /* KKMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B5C785195AA9D800DB5727 /* KKMessageCell.m */; };
+		13B5C799195AA9D800DB5727 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B5C788195AA9D800DB5727 /* ChatViewController.m */; };
+		13B5C79A195AA9D800DB5727 /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B5C789195AA9D800DB5727 /* ChatViewController.xib */; };
+		13B5C79B195AA9D800DB5727 /* CWInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B5C78D195AA9D800DB5727 /* CWInputView.m */; };
+		13B5C79C195AA9D800DB5727 /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B5C790195AA9D800DB5727 /* NSString+Emoji.m */; };
+		13B5C79D195AA9D800DB5727 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B5C793195AA9D800DB5727 /* LoginViewController.m */; };
+		13B5C79E195AA9D800DB5727 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B5C794195AA9D800DB5727 /* LoginViewController.xib */; };
+		13B5C79F195AA9D800DB5727 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B5C797195AA9D800DB5727 /* User.m */; };
+		13B5C7A4195ABA6300DB5727 /* GroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B5C7A2195ABA6300DB5727 /* GroupViewController.m */; };
+		13B5C7A5195ABA6300DB5727 /* GroupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B5C7A3195ABA6300DB5727 /* GroupViewController.xib */; };
+		13B5C7A8195BFA5A00DB5727 /* Room.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B5C7A7195BFA5A00DB5727 /* Room.m */; };
+		4B10C35783864BFC8C338CBF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E2BE7CB58E749B19DDE7047 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		13B5C744195A5E2300DB5727 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13B5C716195A5E2300DB5727 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13B5C71D195A5E2300DB5727;
+			remoteInfo = TestXMPPDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		13B5C71E195A5E2300DB5727 /* TestXMPPDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestXMPPDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B5C721195A5E2300DB5727 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		13B5C723195A5E2300DB5727 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		13B5C725195A5E2300DB5727 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		13B5C729195A5E2300DB5727 /* TestXMPPDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestXMPPDemo-Info.plist"; sourceTree = "<group>"; };
+		13B5C72B195A5E2300DB5727 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		13B5C72D195A5E2300DB5727 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		13B5C72F195A5E2300DB5727 /* TestXMPPDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestXMPPDemo-Prefix.pch"; sourceTree = "<group>"; };
+		13B5C730195A5E2300DB5727 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		13B5C731195A5E2300DB5727 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		13B5C734195A5E2300DB5727 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		13B5C736195A5E2300DB5727 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		13B5C737195A5E2300DB5727 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		13B5C739195A5E2300DB5727 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		13B5C73F195A5E2300DB5727 /* TestXMPPDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestXMPPDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B5C740195A5E2300DB5727 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		13B5C748195A5E2300DB5727 /* TestXMPPDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestXMPPDemoTests-Info.plist"; sourceTree = "<group>"; };
+		13B5C74A195A5E2300DB5727 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		13B5C74C195A5E2300DB5727 /* TestXMPPDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestXMPPDemoTests.m; sourceTree = "<group>"; };
+		13B5C756195A5FCC00DB5727 /* XMPPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMPPServer.h; sourceTree = "<group>"; };
+		13B5C757195A5FCC00DB5727 /* XMPPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMPPServer.m; sourceTree = "<group>"; };
+		13B5C759195A63BA00DB5727 /* Statics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Statics.h; sourceTree = "<group>"; };
+		13B5C75A195A63BB00DB5727 /* Statics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Statics.m; sourceTree = "<group>"; };
+		13B5C77B195A808200DB5727 /* BlueBubble2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BlueBubble2.png; sourceTree = "<group>"; };
+		13B5C77C195A808200DB5727 /* GreenBubble2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GreenBubble2.png; sourceTree = "<group>"; };
+		13B5C77D195A808200DB5727 /* aqua.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aqua.png; sourceTree = "<group>"; };
+		13B5C77E195A808200DB5727 /* orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orange.png; sourceTree = "<group>"; };
+		13B5C784195AA9D800DB5727 /* KKMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKMessageCell.h; sourceTree = "<group>"; };
+		13B5C785195AA9D800DB5727 /* KKMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKMessageCell.m; sourceTree = "<group>"; };
+		13B5C787195AA9D800DB5727 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		13B5C788195AA9D800DB5727 /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+		13B5C789195AA9D800DB5727 /* ChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
+		13B5C78C195AA9D800DB5727 /* CWInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWInputView.h; sourceTree = "<group>"; };
+		13B5C78D195AA9D800DB5727 /* CWInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWInputView.m; sourceTree = "<group>"; };
+		13B5C78F195AA9D800DB5727 /* NSString+Emoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Emoji.h"; sourceTree = "<group>"; };
+		13B5C790195AA9D800DB5727 /* NSString+Emoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Emoji.m"; sourceTree = "<group>"; };
+		13B5C792195AA9D800DB5727 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		13B5C793195AA9D800DB5727 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		13B5C794195AA9D800DB5727 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		13B5C796195AA9D800DB5727 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		13B5C797195AA9D800DB5727 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		13B5C7A1195ABA6300DB5727 /* GroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupViewController.h; sourceTree = "<group>"; };
+		13B5C7A2195ABA6300DB5727 /* GroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupViewController.m; sourceTree = "<group>"; };
+		13B5C7A3195ABA6300DB5727 /* GroupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupViewController.xib; sourceTree = "<group>"; };
+		13B5C7A6195BFA5A00DB5727 /* Room.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Room.h; sourceTree = "<group>"; };
+		13B5C7A7195BFA5A00DB5727 /* Room.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Room.m; sourceTree = "<group>"; };
+		8A5BAB5FFC9B488BB137712C /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		8E2BE7CB58E749B19DDE7047 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13B5C71B195A5E2300DB5727 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B5C724195A5E2300DB5727 /* CoreGraphics.framework in Frameworks */,
+				13B5C726195A5E2300DB5727 /* UIKit.framework in Frameworks */,
+				13B5C722195A5E2300DB5727 /* Foundation.framework in Frameworks */,
+				4B10C35783864BFC8C338CBF /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B5C73C195A5E2300DB5727 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B5C741195A5E2300DB5727 /* XCTest.framework in Frameworks */,
+				13B5C743195A5E2300DB5727 /* UIKit.framework in Frameworks */,
+				13B5C742195A5E2300DB5727 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13B5C715195A5E2300DB5727 = {
+			isa = PBXGroup;
+			children = (
+				13B5C727195A5E2300DB5727 /* TestXMPPDemo */,
+				13B5C746195A5E2300DB5727 /* TestXMPPDemoTests */,
+				13B5C720195A5E2300DB5727 /* Frameworks */,
+				13B5C71F195A5E2300DB5727 /* Products */,
+				8A5BAB5FFC9B488BB137712C /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		13B5C71F195A5E2300DB5727 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B5C71E195A5E2300DB5727 /* TestXMPPDemo.app */,
+				13B5C73F195A5E2300DB5727 /* TestXMPPDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		13B5C720195A5E2300DB5727 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13B5C721195A5E2300DB5727 /* Foundation.framework */,
+				13B5C723195A5E2300DB5727 /* CoreGraphics.framework */,
+				13B5C725195A5E2300DB5727 /* UIKit.framework */,
+				13B5C740195A5E2300DB5727 /* XCTest.framework */,
+				8E2BE7CB58E749B19DDE7047 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		13B5C727195A5E2300DB5727 /* TestXMPPDemo */ = {
+			isa = PBXGroup;
+			children = (
+				13B5C7A0195ABA4C00DB5727 /* Group */,
+				13B5C783195AA9D800DB5727 /* cell */,
+				13B5C786195AA9D800DB5727 /* chat */,
+				13B5C78A195AA9D800DB5727 /* HelpTools */,
+				13B5C791195AA9D800DB5727 /* login */,
+				13B5C795195AA9D800DB5727 /* model */,
+				13B5C77A195A807900DB5727 /* Images */,
+				13B5C759195A63BA00DB5727 /* Statics.h */,
+				13B5C75A195A63BB00DB5727 /* Statics.m */,
+				13B5C756195A5FCC00DB5727 /* XMPPServer.h */,
+				13B5C757195A5FCC00DB5727 /* XMPPServer.m */,
+				13B5C730195A5E2300DB5727 /* AppDelegate.h */,
+				13B5C731195A5E2300DB5727 /* AppDelegate.m */,
+				13B5C733195A5E2300DB5727 /* Main.storyboard */,
+				13B5C736195A5E2300DB5727 /* ViewController.h */,
+				13B5C737195A5E2300DB5727 /* ViewController.m */,
+				13B5C739195A5E2300DB5727 /* Images.xcassets */,
+				13B5C728195A5E2300DB5727 /* Supporting Files */,
+			);
+			path = TestXMPPDemo;
+			sourceTree = "<group>";
+		};
+		13B5C728195A5E2300DB5727 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				13B5C729195A5E2300DB5727 /* TestXMPPDemo-Info.plist */,
+				13B5C72A195A5E2300DB5727 /* InfoPlist.strings */,
+				13B5C72D195A5E2300DB5727 /* main.m */,
+				13B5C72F195A5E2300DB5727 /* TestXMPPDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13B5C746195A5E2300DB5727 /* TestXMPPDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				13B5C74C195A5E2300DB5727 /* TestXMPPDemoTests.m */,
+				13B5C747195A5E2300DB5727 /* Supporting Files */,
+			);
+			path = TestXMPPDemoTests;
+			sourceTree = "<group>";
+		};
+		13B5C747195A5E2300DB5727 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				13B5C748195A5E2300DB5727 /* TestXMPPDemoTests-Info.plist */,
+				13B5C749195A5E2300DB5727 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13B5C77A195A807900DB5727 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				13B5C77B195A808200DB5727 /* BlueBubble2.png */,
+				13B5C77C195A808200DB5727 /* GreenBubble2.png */,
+				13B5C77D195A808200DB5727 /* aqua.png */,
+				13B5C77E195A808200DB5727 /* orange.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		13B5C783195AA9D800DB5727 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				13B5C784195AA9D800DB5727 /* KKMessageCell.h */,
+				13B5C785195AA9D800DB5727 /* KKMessageCell.m */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		13B5C786195AA9D800DB5727 /* chat */ = {
+			isa = PBXGroup;
+			children = (
+				13B5C787195AA9D800DB5727 /* ChatViewController.h */,
+				13B5C788195AA9D800DB5727 /* ChatViewController.m */,
+				13B5C789195AA9D800DB5727 /* ChatViewController.xib */,
+			);
+			path = chat;
+			sourceTree = "<group>";
+		};
+		13B5C78A195AA9D800DB5727 /* HelpTools */ = {
+			isa = PBXGroup;
+			children = (
+				13B5C78B195AA9D800DB5727 /* CWInputView */,
+			);
+			path = HelpTools;
+			sourceTree = "<group>";
+		};
+		13B5C78B195AA9D800DB5727 /* CWInputView */ = {
+			isa = PBXGroup;
+			children = (
+				13B5C78C195AA9D800DB5727 /* CWInputView.h */,
+				13B5C78D195AA9D800DB5727 /* CWInputView.m */,
+				13B5C78E195AA9D800DB5727 /* NSString+Emoji */,
+			);
+			path = CWInputView;
+			sourceTree = "<group>";
+		};
+		13B5C78E195AA9D800DB5727 /* NSString+Emoji */ = {
+			isa = PBXGroup;
+			children = (
+				13B5C78F195AA9D800DB5727 /* NSString+Emoji.h */,
+				13B5C790195AA9D800DB5727 /* NSString+Emoji.m */,
+			);
+			path = "NSString+Emoji";
+			sourceTree = "<group>";
+		};
+		13B5C791195AA9D800DB5727 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				13B5C792195AA9D800DB5727 /* LoginViewController.h */,
+				13B5C793195AA9D800DB5727 /* LoginViewController.m */,
+				13B5C794195AA9D800DB5727 /* LoginViewController.xib */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		13B5C795195AA9D800DB5727 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				13B5C796195AA9D800DB5727 /* User.h */,
+				13B5C797195AA9D800DB5727 /* User.m */,
+				13B5C7A6195BFA5A00DB5727 /* Room.h */,
+				13B5C7A7195BFA5A00DB5727 /* Room.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		13B5C7A0195ABA4C00DB5727 /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				13B5C7A1195ABA6300DB5727 /* GroupViewController.h */,
+				13B5C7A2195ABA6300DB5727 /* GroupViewController.m */,
+				13B5C7A3195ABA6300DB5727 /* GroupViewController.xib */,
+			);
+			path = Group;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13B5C71D195A5E2300DB5727 /* TestXMPPDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B5C750195A5E2300DB5727 /* Build configuration list for PBXNativeTarget "TestXMPPDemo" */;
+			buildPhases = (
+				19D6BADFFF90426ABB47FD56 /* Check Pods Manifest.lock */,
+				13B5C71A195A5E2300DB5727 /* Sources */,
+				13B5C71B195A5E2300DB5727 /* Frameworks */,
+				13B5C71C195A5E2300DB5727 /* Resources */,
+				A4E0F4D776484B0BBF03DE50 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestXMPPDemo;
+			productName = TestXMPPDemo;
+			productReference = 13B5C71E195A5E2300DB5727 /* TestXMPPDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		13B5C73E195A5E2300DB5727 /* TestXMPPDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B5C753195A5E2300DB5727 /* Build configuration list for PBXNativeTarget "TestXMPPDemoTests" */;
+			buildPhases = (
+				13B5C73B195A5E2300DB5727 /* Sources */,
+				13B5C73C195A5E2300DB5727 /* Frameworks */,
+				13B5C73D195A5E2300DB5727 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13B5C745195A5E2300DB5727 /* PBXTargetDependency */,
+			);
+			name = TestXMPPDemoTests;
+			productName = TestXMPPDemoTests;
+			productReference = 13B5C73F195A5E2300DB5727 /* TestXMPPDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		13B5C716195A5E2300DB5727 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = lcw;
+				TargetAttributes = {
+					13B5C73E195A5E2300DB5727 = {
+						TestTargetID = 13B5C71D195A5E2300DB5727;
+					};
+				};
+			};
+			buildConfigurationList = 13B5C719195A5E2300DB5727 /* Build configuration list for PBXProject "TestXMPPDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 13B5C715195A5E2300DB5727;
+			productRefGroup = 13B5C71F195A5E2300DB5727 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13B5C71D195A5E2300DB5727 /* TestXMPPDemo */,
+				13B5C73E195A5E2300DB5727 /* TestXMPPDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13B5C71C195A5E2300DB5727 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B5C77F195A808200DB5727 /* BlueBubble2.png in Resources */,
+				13B5C73A195A5E2300DB5727 /* Images.xcassets in Resources */,
+				13B5C781195A808200DB5727 /* aqua.png in Resources */,
+				13B5C780195A808200DB5727 /* GreenBubble2.png in Resources */,
+				13B5C7A5195ABA6300DB5727 /* GroupViewController.xib in Resources */,
+				13B5C72C195A5E2300DB5727 /* InfoPlist.strings in Resources */,
+				13B5C735195A5E2300DB5727 /* Main.storyboard in Resources */,
+				13B5C79A195AA9D800DB5727 /* ChatViewController.xib in Resources */,
+				13B5C782195A808200DB5727 /* orange.png in Resources */,
+				13B5C79E195AA9D800DB5727 /* LoginViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B5C73D195A5E2300DB5727 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B5C74B195A5E2300DB5727 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19D6BADFFF90426ABB47FD56 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A4E0F4D776484B0BBF03DE50 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13B5C71A195A5E2300DB5727 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B5C7A8195BFA5A00DB5727 /* Room.m in Sources */,
+				13B5C7A4195ABA6300DB5727 /* GroupViewController.m in Sources */,
+				13B5C79C195AA9D800DB5727 /* NSString+Emoji.m in Sources */,
+				13B5C738195A5E2300DB5727 /* ViewController.m in Sources */,
+				13B5C732195A5E2300DB5727 /* AppDelegate.m in Sources */,
+				13B5C72E195A5E2300DB5727 /* main.m in Sources */,
+				13B5C79D195AA9D800DB5727 /* LoginViewController.m in Sources */,
+				13B5C75B195A63BB00DB5727 /* Statics.m in Sources */,
+				13B5C79F195AA9D800DB5727 /* User.m in Sources */,
+				13B5C758195A5FCC00DB5727 /* XMPPServer.m in Sources */,
+				13B5C79B195AA9D800DB5727 /* CWInputView.m in Sources */,
+				13B5C799195AA9D800DB5727 /* ChatViewController.m in Sources */,
+				13B5C798195AA9D800DB5727 /* KKMessageCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B5C73B195A5E2300DB5727 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B5C74D195A5E2300DB5727 /* TestXMPPDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		13B5C745195A5E2300DB5727 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13B5C71D195A5E2300DB5727 /* TestXMPPDemo */;
+			targetProxy = 13B5C744195A5E2300DB5727 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		13B5C72A195A5E2300DB5727 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13B5C72B195A5E2300DB5727 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		13B5C733195A5E2300DB5727 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13B5C734195A5E2300DB5727 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		13B5C749195A5E2300DB5727 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13B5C74A195A5E2300DB5727 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		13B5C74E195A5E2300DB5727 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		13B5C74F195A5E2300DB5727 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		13B5C751195A5E2300DB5727 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A5BAB5FFC9B488BB137712C /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestXMPPDemo/TestXMPPDemo-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/CocoaAsyncSocket\"",
+					"\"${PODS_ROOT}/Headers/CocoaLumberjack\"",
+					"\"${PODS_ROOT}/Headers/XMPPFramework\"",
+					"$(SDKROOT)/usr/include/libxml2",
+					"$(SDKROOT)/usr/include/libresolv",
+				);
+				INFOPLIST_FILE = "TestXMPPDemo/TestXMPPDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		13B5C752195A5E2300DB5727 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A5BAB5FFC9B488BB137712C /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestXMPPDemo/TestXMPPDemo-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/CocoaAsyncSocket\"",
+					"\"${PODS_ROOT}/Headers/CocoaLumberjack\"",
+					"\"${PODS_ROOT}/Headers/XMPPFramework\"",
+					"$(SDKROOT)/usr/include/libxml2",
+					"$(SDKROOT)/usr/include/libresolv",
+				);
+				INFOPLIST_FILE = "TestXMPPDemo/TestXMPPDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		13B5C754195A5E2300DB5727 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TestXMPPDemo.app/TestXMPPDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestXMPPDemo/TestXMPPDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TestXMPPDemoTests/TestXMPPDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		13B5C755195A5E2300DB5727 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TestXMPPDemo.app/TestXMPPDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestXMPPDemo/TestXMPPDemo-Prefix.pch";
+				INFOPLIST_FILE = "TestXMPPDemoTests/TestXMPPDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13B5C719195A5E2300DB5727 /* Build configuration list for PBXProject "TestXMPPDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B5C74E195A5E2300DB5727 /* Debug */,
+				13B5C74F195A5E2300DB5727 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13B5C750195A5E2300DB5727 /* Build configuration list for PBXNativeTarget "TestXMPPDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B5C751195A5E2300DB5727 /* Debug */,
+				13B5C752195A5E2300DB5727 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13B5C753195A5E2300DB5727 /* Build configuration list for PBXNativeTarget "TestXMPPDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B5C754195A5E2300DB5727 /* Debug */,
+				13B5C755195A5E2300DB5727 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 13B5C716195A5E2300DB5727 /* Project object */;
+}
